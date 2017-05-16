@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="Keywords" content="关键词"/>
+		<meta name="Description" content="关键词描述"/>
+		<title>狮子座金融</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/about.css"/>
+		<script src="../../js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="top">
+			<div class="wt1200 ">
+				<div>
+					<span class="ml46">客服热线&nbsp;400-8099-344</span>
+					<a class="ml20" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=064e12f234549bcba0004a369ff1e1cd74e2f624c523cbfb6a56622b98e4e837">加入官方服务群（群号304822753）</a>
+				</div>
+				<div class="right fz14">
+					<a href="##">登录</a>
+					<b>|</b>
+					<a href="##">注册</a>
+					<b>|</b>
+					<a href="##">帮助中心</a>
+				</div>
+			</div>
+		</div>
+		<div class="hender">
+			<div class="wt1200">
+				<div class="logo di"><img src="../../images/logo.png" alt="狮子座金融"/></div>
+				<div class="nav">
+					<ul class="clearfix">
+						<li><a href="##" class="active">首&nbsp;&nbsp;页</a></li>
+						<li><a href="##">我要投资</a></li>
+						<li><a href="##">投资指引</a></li>
+						<li class="moveto prel"><a href="##">信息披露</a>
+							<ul class="submenu">
+								<li><a href="##">运营报告</a></li>
+								<li><a href="##">实时办公</a></li>
+								<li><a href="##">安全保障</a></li>
+								<li><a href="##">平台简介</a></li>
+								<li><a href="##">管理团队</a></li>
+								<li><a href="##">股东组成</a></li>
+								<li><a href="##">官方公告</a></li>
+								<li><a href="##">还款公告</a></li>
+								<li><a href="##">公司动态</a></li>
+								<li><a href="##">行业资讯</a></li>
+								<li><a href="##">趣味理财</a></li>
+							</ul>
+						</li>
+						<li><a href="##">我的账户</a></li>
+					</ul>
+				</div>
+					
+			</div>
+		</div>
+		<div class="crumbs">
+			<a href="##">首页&gt;</a><a href="##">导航名字&gt;</a><span>文章标题</span>
+		</div>
+		
+		<div class="wt1200 clearfix">
+			<div class="sidenav">
+				<ul>
+					<li><a href="">运营报告</a></li>
+					<li><a href="">安全保障</a></li>
+					<li><a href="about.html" class="on">平台简介</a></li>
+					<li><a href="">实时办公</a></li>
+					<li><a href="team.html" >管理团队</a></li>
+					<li><a href="notice.html">官方公告</a></li>
+					<li><a href="notice1.html">发标公告</a></li>
+					<li><a href="notice2.html">还款公告</a></li>
+					<li><a href="figure.html">公司动态</a></li>
+					<li><a href="">行业资讯</a></li>
+					<li><a href="">趣味理财</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<div class="nowdata">
+					<ul id="tab"class="clearfix">
+						<li class="on li1">实时数据</li>
+						<li>运营报告</li>
+					</ul>
+					<div class="tab-content">
+						<div class="data1">
+							<h1>平台运营：462天</h1>
+							<p>宏观解读业务动态 权威披露核心风控指标</p>
+						</div>
+						<h4>平台数据总览</h4>
+						<div class="data2">
+							<dl>
+								<dt class="icon1"></dt>
+								<dd class="d1">11,669.67</dd>
+								<dd>交易总额(万元)</dd>
+							</dl>
+							<dl>
+								<dt class="icon2"></dt>
+								<dd class="d1">11,669.67</dd>
+								<dd>待收总额(万元)</dd>
+							</dl>
+							<dl>
+								<dt class="icon3"></dt>
+								<dd class="d1">11,669.67</dd>
+								<dd>累计投资(万元)</dd>
+							</dl>
+							<dl>
+								<dt class="icon4"></dt>
+								<dd class="d1">11,669.67</dd>
+								<dd>待收本金(万元)</dd>
+							</dl>
+							<dl>
+								<dt class="icon5"></dt>
+								<dd class="d1">11,669.67</dd>
+								<dd>用户累计收益(万元)</dd>
+							</dl>
+							<dl>
+								<dt class="icon6"></dt>
+								<dd class="d1">11,669.67</dd>
+								<dd>待收利息(万元)</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	$(function  () {
+		$(window).scroll(function  () {
+			var	toTOP=$(this).scrollTop();
+			var eTarget=$('.sidenav');
+		   	if (toTOP<160) {
+		   		eTarget.css('top',212-toTOP)
+		   	} else{
+		   		eTarget.css('top',30)
+		   	}
+		   
+		});
+
+		$(".sidenav").on('click','a', function  (e) {
+			$(this).addClass('on').parent().siblings().find('a').removeClass('on');
+			var hrf =$(this).attr("href");
+			if (hrf) {
+				$.get(hrf+'?t='+new Date().getTime(),function  (data) {
+					$(".content").html(data);
+				});
+			} else{
+				$(".content").html("暂时木有页面");
+			}
+			
+			return false;
+		})
+	})
+</script>

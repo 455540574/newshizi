@@ -1,0 +1,124 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body {background:#f5f6f7;color:#838383;font-size:14px;font-family: Microsoft YaHei,"微软雅黑", Helvetica, Tahoma;}
+td,th,caption { font-size:14px; }
+address, caption, cite, code, dfn, em, strong, th, var ,i{ font-style:normal; font-weight:normal;}
+img{ border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+a {color: #838383;text-decoration: none;}
+
+table { border-collapse:collapse; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+h1 {font-size:24px;}
+h2 { font-size:20px; }
+h3 {font-size:18px;}
+h4 { font-size:16px; }
+h5 { font-size:14px; }
+h6 { font-size:12px; }
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: "."; clear: both; height: 0; overflow: hidden; }
+.clear { clear: both; visibility: hidden; height: 0; line-height: 0; font-size: 0; }
+.fl { float:left; }
+.fr {float:right;}
+.dn { display:none; }
+.db {display:block;}
+.di{display:inline-block;}
+.prel {position:relative;}
+.pabs {position: absolute;}
+
+.active{color:#f90;}
+.yellow{color: #ff8400;}
+.blue{color: #567beb;}
+.red{color: #f00;}
+.hui{color: #838383}
+.bgcolor01{background: #ccc;}    /*浅灰*/
+.bgcolor02{background: #b1b1b1;} /*深灰*/
+.bgcolor03{background: #fe971f;} /*黄*/
+.bgcolor04{background: #567beb;} /*蓝*/
+.bgcolor05{background: #ff0000;} /*红*/
+
+.ml46{margin-left: 46px;}
+.ml32{margin-left: 32px;}
+.ml20{margin-left: 20px;}
+.mt10{margin-top: 10px;}
+.mt26{margin-top: 26px;}
+.mt32{margin-top: 32px;}
+.mt50{margin-top: 50px;}
+.mr46{margin-right: 46px;}
+.mb14{margin-bottom: 14px;}
+.mb16{margin-bottom: 16px;}
+.fz12{font-size: 12px;}
+.fz14{font-size: 14px;}
+.fz16{font-size: 16px;}
+.fz18{font-size: 18px;}
+.fz20{font-size: 20px;}
+.fz22{font-size: 22px;}
+.fz34{font-size: 34px;}
+.t-center{margin: 0 auto;text-align: center;}
+
+/*width height*/
+.wtb100 {width:100%;}
+.wt1200{width: 1200px;min-width: 1200px; margin: 0 auto;position: relative;}
+.htb{height: 100%;}
+
+.hender a:hover,.top a:hover{color: #f90; text-decoration: none;}
+.top{width: 100%;min-width: 1200px;height: 38px;line-height: 38px;background: #383838;color: #fff;font-size: 12px;overflow: hidden;}
+.top a{color: #fff;}
+.top a:hover{color: #fe971f; }
+.top .right{position: absolute;top: 0;right: 46px;}
+.top .right a{vertical-align: middle;}
+.hender{position: relative;width: 100%;min-width: 1200px;height:120px;z-index: 100;background: #fff;}
+.hender .wt1200{height: 100%;}
+.hender .logo{margin-top: 20px;margin-left: 46px;}
+.hender .nav{position: absolute;top: 48px;right: 40px;}
+.hender .nav li {width: 112px;height:48px ; float: left;font-size: 18px;}
+.hender .nav li a{display: block;width: 100%;height: 100%;line-height: 48px; text-align: center;}
+.hender .nav .submenu{position: absolute;height: 0;overflow: hidden;background: #fff;z-index: 9999;transition: 0.2s all ease-out;}
+.hender .nav .submenu li{height: 30px;transition: 0.1s ease-in;}
+.hender .nav .submenu li:hover{background: #F1F1F1;}
+.hender .nav .submenu li a{line-height: 30px;font-size: 16px;}
+.hender .nav .moveto:hover .submenu{ height: 330px;} 
+.hender .nav .moveto:after{position: absolute;top: 21px;right: 6px;width: 0;height: 0;content:"";display: block;border-left: 4px solid transparent;border-right: 4px solid transparent;border-bottom: 8px solid #f90;transition: 0.4s all ease-out;}
+.hender .nav .moveto:hover:after{transform: rotate(-180deg);}
+	
+.footer{width: 100%;min-width: 1200px; background: #f1f1f1;}
+.footer .left{float: left;margin-left:32px;margin-top: 20px;}
+.footer .left ul{float: left;margin-right: 66px;}
+.footer .left ul li{font-size: 14px;line-height: 24px;}
+.footer .right{float: left;margin-left:190px ; margin-top: 20px;}
+.footer .right .right01{ width: 84px;float: left;text-align: center;}
+.footer .right i{display: block;width:84px ;height: 84px;background-image: url(../images/wenxin.png);}
+.footer .right .i2{background-position: 0 -84px;}
+.footer .right .right02 p{line-height: 20px;}
+.footer .right .right02 .tel{margin-top: 15px;font-weight:600;}
+.footer .link{width: 1156px;margin: 58px auto 0;padding-bottom: 10px;border-bottom: 2px solid #fff;}
+.footer .link a{margin-left: 10px;}
+.footer .safety{margin-top: 28px;margin-bottom: 18px; text-align: center;}
+.footer .safety a{display: inline-block;width: 110px;height: 36px;background-image: url(../images/safe.png);}
+.footer .safety .a2{background-position: 110px 0px;}
+.footer .safety .a3{background-position: 234px 0px;}
+.footer .safety .a1:hover{background-position: 0 -36px;}
+.footer .safety .a2:hover{background-position: 110px -36px;}
+.footer .safety .a3:hover{background-position: 234px -36px;}
+.footer .safety .images{width: 100%;height: 100%;}
+.footer .copyright{padding-bottom: 26px; text-align: center;}
+.footer a:hover{color: #f90; text-decoration: none; }
+
+.aside{position: fixed;left: 50%;bottom: 100px;margin-left: 630px;width: 70px;z-index: 20000;border: 1px solid #f0f0f0;border-bottom: none;background: #fff;}
+.aside li{width: 70px;height: 70px;border-bottom: 1px solid #f0f0f0;position: relative;cursor: pointer;background: url(../images/aside.png);}
+.aside li:hover .tel{ width: 103px; left: -102px;}
+.aside .tel{position: absolute;left: 0;color: #fff;font-size: 14px;background: #ffb432;height: 50px;transition: 0.3s;width: 0px;text-align: center;padding-top: 20px;overflow: hidden;}
+.aside .li1 a{display: inline-block;width: 100%;height: 70px;}
+.aside .tel span{display: block; width: 102px;}
+.aside .li2{background-position: -210px 0;}
+.aside .li3{background-position: -70px 0;}
+.aside .li4{background-position: -140px 0;}
+.aside .li1:hover{background-position: 0 -70px;}
+.aside .li2:hover{background-position: -210px -70px;}
+.aside .li3:hover{background-position: -70px -70px;}
+.aside .li4:hover{background-position: -140px -70px;}
+.aside .weixin{display: none; position: absolute;left: -87px;top: -6px;width: 84px;height: 84px;background: url(../images/wenxin.png);transition: 0.5s;}
+.aside .li3:hover .weixin{display: block; width: 84px;}
+
+.crumbs{width: 1200px;min-width: 1200px;height:54px;line-height: 54px;margin: 0 auto;}
+.crumbs a:hover{color: #ff8400;}
